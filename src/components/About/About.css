@@ -1,0 +1,24 @@
+.segment1{
+   margin-left: 820px ;
+   margin-top: 150px;
+}
+
+.header1{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.name{
+    font-size: 70px;
+}
+
+.segment2{
+   margin-top: 100px;
+
+
+}
+.myimg{
+    height: 30px;
+    width: 50px;
+    margin-left: 10px;
+}
