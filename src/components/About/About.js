@@ -6,17 +6,17 @@ const About = () => {
    return (
       <div id="ui about" >
          <div className="ui grid">
-            <div className="two wide column">
+            <div className="one wide column">
                <img className="myimg" src={image1} />
             </div>
             <div className="ui about2">
-            <div className="five wide row">
-               <div className="ui segment">
-                  <h2 className="ui header1">HI THERE , I'M</h2>
-                  <h1 className="ui name">MIHIKA SAXENA</h1>
-                  <p className="ui aboutme">A frontend Web-Developer</p>
+               <div className="four wide row">
+                  <div className="ui segment">
+                     <h2 className="ui header1">HI THERE , I'M</h2>
+                     <h1 className="ui name">MIHIKA SAXENA</h1>
+                     <p className="ui aboutme">A frontend Web-Developer</p>
+                  </div>
                </div>
-            </div>
             </div>
          </div>
          <div className="segment2">

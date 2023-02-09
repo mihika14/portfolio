@@ -16,6 +16,8 @@ const HomePage = () => {
                 < About />
             </div>
         </div>
+        <Skills />
+        <Education/>
 </div>
 
     )
