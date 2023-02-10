@@ -1,36 +1,36 @@
 #about{
     display: flex;
     justify-content: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.ui.segment{
-   margin-left: 298px ; 
-   margin-top: 50px;
 
-}
-
-.ui.about2{
+.ui.column.grid>[class*="ten wide"].column, .ui.grid>.column.row>[class*="ten wide"].column, .ui.grid>.row>[class*="ten wide"].column, .ui.grid>[class*="ten wide"].column{
     display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
 }
 
 .header1{
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .name{
-    font-size: 70px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.segment2{
-   margin-top: 100px;
-
+.aboutme{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
 .myimg{
-    height: 230px;
-    width: 250px;
-    margin-top: 80px;
+    height: 330px;
+    width:350px;
     border-radius: 50%;
-    margin-right: 20px;
+    border: 2px solid black;
 }

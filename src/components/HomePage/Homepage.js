@@ -4,26 +4,21 @@ import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects"
 import Education from "../Education/Education"
 import Navbar from "../Navbar/Navbar";
+import "./Homepage.css";
 
 const HomePage = () => {
     return (
         <div>
-            <div class="ui grid">
-            <div class="three wide column">
-                <Navbar />
-            </div>
-            <div className="nine wide column">
-                < About />
-            </div>
+            <Navbar />
+            < About />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Skills />
+            <Education />
         </div>
-        <Skills />
-        <Education/>
-</div>
-
     )
-
-
-
 }
-
 export default HomePage;
