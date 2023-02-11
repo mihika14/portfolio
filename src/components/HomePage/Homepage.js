@@ -17,6 +17,11 @@ const HomePage = () => {
             <br/>
             <br/>
             <Skills />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <Education />
         </div>
     )

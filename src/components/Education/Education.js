@@ -1,46 +1,28 @@
 import React from "react";
+import dma from './assests/dma (2).png';
+import srcasw from './assests/srcasw (2).png';
+import './Education.css';
 
 const Education = () => {
    return (
-      <section id="Education">
-         <h1 className="ui heading 4">EDUCATION</h1>
-         <div className="ui header">
-            <img className="ui image" src="https://iconape.com/wp-content/png_logo_vector/graduation-cap.png" />
-            <div className="content">
-               <h2>
-                  B.Sc (Hons) Electronics
-                  <h4>
-                     Delhi University(2020-2023)
-                  </h4>
-               </h2>
-            </div>
+      <div className="ui Education">
+         <h1 className="ui header4">EDUCATION</h1>
+         <div className="ui intermediate">
+            <img className="ui dma" src={dma} />
+            <h3 className="ui header6">DAYAWATI MODI ACADEMY</h3>
+            <h4 className="ui twelth">Intermediate</h4>
          </div>
-         <div className="ui header">
-            <img className="ui image" src="https://iconape.com/wp-content/png_logo_vector/graduation-cap.png" />
-            <div className="content">
-               <h2>
-                 INTERMEDIATE
-                  <h4>
-                     Dayawati Modi Academy(2019-2020)
-                  </h4>
-               </h2>
-            </div>
+         <br />
+         <div className="ui highschool">
+            <img className="ui dma" src={dma} />
+            DAYAWATI MODI ACADEMY
          </div>
-         <div className="ui header">
-            <img className="ui image" src="https://iconape.com/wp-content/png_logo_vector/graduation-cap.png" />
-            <div className="content">
-               <h2>
-                  HIGH SCHOOL
-                  <h4>
-                  Dayawati Modi Academy(2017-2018)
-                  </h4>
-               </h2>
-            </div>
+         <br />
+         <div className="ui graduation">
+            <img className="ui srcasw" src={srcasw} />
+            DAYAWATI MODI ACADEMY
          </div>
-
-
-
-      </section>
+      </div>
    )
 
 };

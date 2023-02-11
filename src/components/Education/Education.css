@@ -1,0 +1,17 @@
+.dma{
+    height: 80px;
+}
+
+.srcasw{
+    height: 80px;
+}
+
+.intermediate{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.twelth{
+    display: flex;
+}

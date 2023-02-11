@@ -10,7 +10,7 @@ const About = () => {
          <div className="ui internally celled grid">
             <div class="row">
                <div className="five wide column">
-                  <img className="myimg" src={image1} />
+                  <img className="ui myimg" src={image1} />
                </div>
                <div className="nine wide column">
 
@@ -21,7 +21,7 @@ const About = () => {
                      As a Front-End Developer, I have honed my technical skills and possess a keen eye for design,
                      allowing me to create visually appealing and user-friendly digital experiences.<br/>
                      As a student at Shaheed Rajguru College of Applied Sciences for Women (Delhi University), I am constantly seeking
-                     new opportunities to learn and grow in my field.
+                     new opportunities to learn and grow in my field.<br/>
                      In addition to my academic pursuits, I am also a talented hockey player, having achieved national level recognition.</h4>
                   <br />
                   <a href="https://drive.google.com/file/d/1SKeKQKKu4ebOoKxEjtW63rg66BMlQ-ZB/view?usp=share_link" target="_blank">

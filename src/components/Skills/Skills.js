@@ -1,14 +1,13 @@
 import React from "react";
-import SkillCard from "./Cards";
+import SkillCard from "./Cards/Cards";
+import "./Skills.css";
 
 const Skills = () => {
    return (
-      <section id="Skills">
-         <div className="ui skills container">
-            <h1 className="ui center aligned header 1">SKILLS AND TECHNOLOGIES</h1>
-         </div>
-         <SkillCard />
-      </section>
+      <div className="ui Skills">
+            <h1 className="ui header4">LANGUAGES AND TOOLS</h1>
+            <SkillCard/>
+      </div>
 
    )
 };

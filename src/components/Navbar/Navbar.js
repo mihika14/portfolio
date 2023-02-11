@@ -11,7 +11,7 @@ export default class Navbar extends Component  {
     const { activeItem } = this.state
 
     return (
-      <div className='navbar'>
+      <div className='ui navbar'>
       <Menu secondary icon='labeled'>
         <Menu.Item
           name='ABOUT'
