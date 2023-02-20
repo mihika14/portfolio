@@ -3,8 +3,6 @@ import "./About.css";
 import image1 from "./image.jpg"
 
 const About = () => {
-
-
    return (
       <div id="ui about" >
          <div className="ui internally celled grid">
@@ -14,13 +12,13 @@ const About = () => {
                </div>
                <div className="nine wide column">
 
-                  <h2 className="ui header1">HI THERE , I'M</h2>
-                  <h1 className="ui name">MIHIKA SAXENA</h1>
+                  <h2 className="ui header1">Hi There , I'm</h2>
+                  <h1 className="ui name">Mihika Saxena</h1>
                   <h4 className="ui aboutme">
-                     A driven and well-rounded individual with a passion for both technology and sports.
+                     A driven and well-rounded individual with a passion for both technology and sports.<br/>
                      As a Front-End Developer, I have honed my technical skills and possess a keen eye for design,
                      allowing me to create visually appealing and user-friendly digital experiences.<br/>
-                     As a student at Shaheed Rajguru College of Applied Sciences for Women (Delhi University), I am constantly seeking
+                     As a student at Shaheed Rajguru College of Applied Sciences for Women (Delhi University),I am constantly seeking
                      new opportunities to learn and grow in my field.<br/>
                      In addition to my academic pursuits, I am also a talented hockey player, having achieved national level recognition.</h4>
                   <br />

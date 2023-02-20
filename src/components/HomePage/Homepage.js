@@ -4,6 +4,7 @@ import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects"
 import Education from "../Education/Education"
 import Navbar from "../Navbar/Navbar";
+import Experience from "../Experience/Experience";
 import "./Homepage.css";
 
 const HomePage = () => {
@@ -23,6 +24,12 @@ const HomePage = () => {
             <br/>
             <br/>
             <Education />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Experience />
         </div>
     )
 }

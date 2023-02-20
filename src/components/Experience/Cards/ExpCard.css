@@ -1,0 +1,71 @@
+.card {
+  width: 290px;
+  height: 300px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin: 2rem;
+ }
+
+ .cardDetails {
+  color: white;
+    height: 100%;
+    gap: 0.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: center;
+ }
+ 
+ 
+ .card2 {
+  width: 290px;
+  height: 300px;
+  background-color: #1a1a1a;
+  border-radius:20px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+ }
+ 
+ .card2:hover {
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98);
+  border-radius: 20px;
+ }
+ 
+ .card:hover {
+  -webkit-box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+          box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+ }
+
+ .cardList{
+  display: flex;
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .cardTitle{
+  display: grid;
+  place-content: center;
+  color: aliceblue;
+ }
+
+ .organization{
+  display: grid;
+  place-content: center;
+  color: aliceblue;
+ }
+
+ .cardBody{
+  text-align: center;
+  color: aliceblue;
+  font-size: 15px;
+ }
