@@ -1,29 +1,60 @@
 import React from "react";
-import SkillCard from "./Cards/Cards";
 import "./Skills.css";
-import js from './assests/java.png';
-import cpp from './assests/c++.png';
-import python from './assests/python.png';
-import react from './assests/reacr.png';
-import css from './assests/css.png';
-import html from './assests/html.png';
-import C from './assests/C.png';
-import semanticui from './assests/semanticui.png';
-import matlab from './assests/matlab.png';
+
 const Skills = () => {
+
+
+   const languages = [
+      {
+         name: "HTML",
+         percent: "90%",
+      },
+      {
+         name: "CSS",
+         percent: "75%",
+      },
+      {
+         name: "React.Js",
+         percent: "75%",
+      },
+      {
+         name: "C",
+         percent: "70%",
+      },
+      {
+         name: "C++",
+         percent: "80%",
+      },
+      {
+         name: "Python",
+         percent: "50%",
+      },
+      {
+         name: "JavaScript",
+         percent: "60%",
+      },
+
+
+   ]
    return (
       <div className="ui Skills">
-            <h1 className="ui header4">LANGUAGES AND TOOLS</h1>
-            {/* <SkillCard/> */}
-            <img className="ui skillimg" src={cpp} />
-            <img className="ui skillimg" src={cpp} />
-            <img className="ui skillimg" src={cpp} />
-            <img className="ui skillimg" src={cpp} />
-            <img className="ui skillimg" src={cpp} />
-            <img className="ui skillimg" src={cpp} />
-            <img className="ui skillimg" src={cpp} />
+         <h1 className="ui header4">LANGUAGES AND TOOLS</h1>
+         <div className="SkillContainer">
+            <div className="SkillCard">
+               <div className="SkillBody">
+                  {languages.map((language) => (
+                     <div className="Skill">
+                        <div className="SkillName">{language.name}</div>
+                        <div className="SkillLevel">
+                           <div className="SkillPercent" style={{ width: language.percent }}></div>
+                        </div>
+                        <div className="SkillPercentnumber">{language.percent}</div>
+                     </div>
+                  ))}
+               </div>
+            </div>
+         </div>
       </div>
-
    )
 };
 

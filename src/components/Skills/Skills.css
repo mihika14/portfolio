@@ -5,3 +5,91 @@
     font-size: 40px;
     font-weight: 1000;
 }
+
+.SkillCard{
+    width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.SkillContainer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.SkillBody{
+  /* display: flex;
+  justify-content: center; */
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .body {
+    padding: 20px;
+  }
+  
+  .Skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .SkillName {
+    width: 120px;
+    font-size: 16px;
+    font-family: 'Roboto Serif', serif;
+  }
+  
+  .SkillLevel {
+    width: 160px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  
+  .SkillPercent {
+    background-color: #333;
+    height: 100%;
+  }
+  
+  .SkillPercentnumber {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .SkillCard {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .SkillCard:hover {
+    background-color: #eee;
+  }
+  
+  .Skillcard {
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .Skillcard:hover {
+    animation: shadow-fade-in 0.2s forwards;
+  }
+  
+  @keyframes shadow-fade-in {
+    from {
+      box-shadow: none;
+    }
+    to {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
