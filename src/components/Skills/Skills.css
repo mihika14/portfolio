@@ -44,8 +44,9 @@
   
   .SkillName {
     width: 120px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Roboto Serif', serif;
+    font-weight: 1000;
   }
   
   .SkillLevel {
@@ -65,6 +66,7 @@
   .SkillPercentnumber {
     margin-left: 20px;
     font-size: 16px;
+    font-weight: 1000;
   }
 
   .SkillCard {
@@ -72,15 +74,15 @@
   }
   
   .SkillCard:hover {
-    background-color: #eee;
+    background-color: #111111;
   }
   
-  .Skillcard {
+  .SkillCard {
     box-shadow: none;
     transition: box-shadow 0.2s ease-in-out;
   }
   
-  .Skillcard:hover {
+  .SkillcCard:hover {
     animation: shadow-fade-in 0.2s forwards;
   }
   
