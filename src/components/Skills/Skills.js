@@ -37,7 +37,7 @@ const Skills = () => {
 
    ]
    return (
-      <div className="ui Skills">
+      <div id="ui Skills">
          <h1 className="ui header4">LANGUAGES AND TOOLS</h1>
          <div className="SkillContainer">
             <div className="SkillCard">

@@ -3,17 +3,9 @@ import ExpCard from "./Cards/ExpCards";
 
 const Experience = () => {
     return (
-        <div className="ui Experience">
-            <div className="ui header4">Experience & Achievements</div>
-
+        <div id="ui Experience">
+            <div className="ui header4">Experience & Certifications</div>
             <ExpCard />
-
-
-
-
-
-
-
         </div>
     )
 

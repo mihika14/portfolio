@@ -5,25 +5,31 @@ const ExpCard = () => {
   const details = [
     {
       title: "REACT DEVELOPER",
-      organization: "SIMMI FOUNDATION",
-      body: "As an intern at Simmi Foundation for three months, I gained practical experience in React.js, JavaScript, HTML, and CSS, while working collaboratively in a team environment. During my internship, I worked on various websites, honing my skills and gaining exposure to web development best practices",
+      organization: "Simmi Foundation",
+      date:"(Sept 2022-Dec 2022)",
+      body: "During my three-month internship at Simmi Foundation, I had the opportunity to work with a team of developers and gain practical experience in React.js, JavaScript, HTML, and CSS . Worked on various websites , providing me with hands-on experience and exposure to Front-end web development best practices.",
       link: "https://drive.google.com/drive/folders/1Cc6YIGhz8BsYNDIQ8EiSPD5CG0Nygtr8?usp=sharing"
+      
     },
     {
       title: "CORE COUNCIL",
-      organization: "VIDYUT",
-      body: "As a core committee member of the Vidyut-Electronics Society at SRCASW,I leveraged my skills in event management,teamwork,and leadership to successfully organize and execute multiple events.Through effective coordination, communication,I ensured the smooth functioning and played a vital role in their overall success.",
+      organization: "Vidyut",
+      body: "As a core committee member of the Vidyut-Electronics Society at SRCASW, I leveraged my skills in event management,teamwork,and leadership to successfully organize and execute multiple events.Through effective coordination, communication,I ensured the smooth functioning and played a vital role in their overall success.",
       link: "https://www.instagram.com/vidyut.srcasw/?hl=en"
     },
     {
-      title: "HOCKEY PLAYER",
-      organization: "2014-2019",
-      body: "With my status as a national-level hockey player, I have demonstrated unwavering dedication, perseverance, and hard work in the sport. Through countless hours of practice and training, I have honed my skills and cultivated a deep love for the game, earning recognition for my achievements at a national level.",
-      link: "instagram.com/vidyut.srcasw/?hl=en"
+      title: "MODERN REACT WITH REDUX",
+      organization: "Udemy",
+      body: "This course provided me with a solid understanding of how to create complex and dynamic user interfaces using React.The course also covered state management in depth, which is crucial for building complex React applications. And how to use more advanced state management libraries such as Redux to handle complex state.",
+    },
+    {
+      title: "AUTHENICATION SERVER",
+      organization: "Devtown",
+      body: "In a seven-day workshop, I was able to develop a secure and reliable authentication server using MongoDB and Node.js . During this project, I learned how to integrate MongoDB, with Node.js. This project provided me with hands-on experience in building a secure and scalable authentication system using MongoDB and Node.js."
     }
   ]
 
-  const Card = ({ title, organization, body, link }) => {
+  const Card = ({ title, organization, date ,body, link }) => {
     const handleClick = () => {
       window.open(link, '_blank');
     }
@@ -33,6 +39,7 @@ const ExpCard = () => {
         <div className='card2'>
           <h2 className='cardTitle'>{title}</h2>
           <h3 className='organization'>{organization}</h3>
+          <h3 className="date">{date}</h3>
           <p className='cardBody'>{body}</p>
           <button className='box' onClick={handleClick}>
             <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,6 +60,7 @@ const ExpCard = () => {
             key={index}
             title={detail.title}
             organization={detail.organization}
+            date={detail.date}
             body={detail.body}
             link={detail.link}
           />

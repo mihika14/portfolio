@@ -17,6 +17,7 @@ export default class Navbar extends Component  {
           name='ABOUT'
           active={activeItem === 'ABOUT'}
           onClick={this.handleItemClick}
+          href="/about"
         >
         <Icon name='home' />
         </Menu.Item>
@@ -24,22 +25,25 @@ export default class Navbar extends Component  {
           name='SKILLS'
           active={activeItem === 'SKILLS'}
           onClick={this.handleItemClick}
+          href="#ui Skills"
         >
-        <Icon name='cog' />
-        </Menu.Item>
-        <Menu.Item
-          name='CONTACT ME'
-          active={activeItem === 'CONTACT ME'}
-          onClick={this.handleItemClick}
-        >
-        <Icon name='phone' />
+        <Icon name='cog'/>
         </Menu.Item>
         <Menu.Item
           name='EDUCATION'
           active={activeItem === 'EDUCATION'}
           onClick={this.handleItemClick}
+          href="#ui Education"
         >
         <Icon name='graduation cap' />
+        </Menu.Item>
+        <Menu.Item
+          name='EXPERIENCE'
+          active={activeItem === 'EXPERIENCE'}
+          onClick={this.handleItemClick}
+          href="#ui Experience"
+        >
+        <Icon name='suitcase' />
         </Menu.Item>
       </Menu>
       </div>

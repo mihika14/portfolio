@@ -5,7 +5,7 @@ import './Education.css';
 
 const Education = () => {
    return (
-      <div className="ui Education">
+      <div id="ui Education">
          <h1 className="ui header4">EDUCATION</h1>
          <div className="ui graduation">
             <div className="ui internally celled grid">
