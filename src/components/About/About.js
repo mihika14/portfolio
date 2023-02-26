@@ -30,6 +30,8 @@ const About = () => {
                      <i className="big linkedin icon"></i></a>
                   <a href="https://www.instagram.com/_mihika14_/" target="_blank">
                      <i className="big pink instagram icon"></i></a>
+                     <a href="mailto: mihikasaxena13@gmail.com"target="_blank">
+                     <i className="big red envelope square icon"></i></a>
                </div>
             </div>
          </div>

@@ -103,3 +103,23 @@
    .resume:hover::before {
     width: 100%;
    }
+
+   i.icon.github:hover{
+     font-size: 50px;
+
+   }
+
+   
+   i.icon.instagram:hover{
+    font-size: 50px;
+  }
+
+  
+  i.icon.linkedin:hover{
+    font-size: 50px;
+  }
+
+  
+  i.icon.envelope:hover{
+    font-size: 50px;
+  }

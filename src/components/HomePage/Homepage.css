@@ -15,8 +15,13 @@ body {
 }
 .arrow.up:hover {
     cursor: pointer;
-    
+    color: black;
   }
+
+.arrow.up:active{
+    color:rgb(100, 104, 176)
+}
+
 .ui.arrow{
     position: fixed;
     bottom: 80px;
