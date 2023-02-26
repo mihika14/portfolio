@@ -15,6 +15,14 @@
     margin-right: 0px;
 }
 
+.ui.me{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .header1 {
     font-size: 20px;
     font-family: 'Roboto Serif', serif;
@@ -26,13 +34,56 @@
     font-family: 'Titillium Web', serif;
     margin-top: -0.5rem;
     font-weight: 50;
+    margin-bottom: -0.5rem
 }
 
 .aboutme {
+  font-family: 'Roboto Serif', serif;
+    font-style: italic;
+    margin-top: 1.5rem;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutme3 {
+  width: 100%;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme3 {
+    max-width: 100%;
+    width: auto;
+    padding: 0 10px;
+  }
+}
+
+
+/* styles for screens larger than 768px */
+@media only screen and (min-width: 768px) {
+  .aboutme {
     font-family: 'Roboto Serif', serif;
     font-style: italic;
     margin-top: 1.5rem;
     font-size: 15px;
+  }
+}
+
+/* styles for screens between 480px and 767px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .aboutme {
+    font-size: 13px;
+    margin-top: 1rem;
+  }
+}
+
+/* styles for screens smaller than 480px */
+@media only screen and (max-width: 479px) {
+  .aboutme {
+    font-size: 12px;
+    margin-top: 0.5rem;
+  }
 }
 
 .aboutme2 {
@@ -42,26 +93,10 @@
     font-size: 25px;
 }
 
-.myimg {
-    height: 297px;
-    width: 324px;
-    border-radius: 50%;
-
+.contact{
+  display: flex;
+  justify-content: center;
 }
-
-@media only screen and (max-width: 768px) {
-    .myimg {
-      height: 200px;
-      width: 200px;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .myimg {
-      height: 150px;
-      width: 150px;
-    }
-  }
 
 .resume {
     padding: 15px 25px;
@@ -104,22 +139,71 @@
     width: 100%;
    }
 
-   i.icon.github:hover{
-     font-size: 50px;
 
-   }
-
-   
-   i.icon.instagram:hover{
+   i.icon.github:hover {
+    font-size: 50px;
+    
+  }
+  i.icon.instagram:hover {
+    font-size: 50px;
+  }
+  i.icon.linkedin:hover {
+    font-size: 50px;
+  }
+  i.icon.envelope:hover {
     font-size: 50px;
   }
 
+/* styles for screens larger than 768px */
+@media only screen and (min-width: 768px) {
+  i.icon.github:hover {
+    font-size: 50px;
+    
+  }
+  i.icon.instagram:hover {
+    font-size: 50px;
+  }
+  i.icon.linkedin:hover {
+    font-size: 50px;
+  }
+  i.icon.envelope:hover {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   
-  i.icon.linkedin:hover{
-    font-size: 50px;
+    i.icon.github:hover {
+      font-size: 40px;
+      margin-top: 0.5rem;
+    }
+    i.icon.instagram:hover {
+      font-size: 40px;
+      margin-top: 0.5rem;
+    }
+    i.icon.linkedin:hover {
+      font-size: 40px;
+      margin-top: 0.5rem;
+    }
+    i.icon.envelope:hover {
+      font-size: 40px;
+      margin-top: 0.5rem;
+    }
+
   }
 
-  
-  i.icon.envelope:hover{
-    font-size: 50px;
+/* styles for screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+  i.icon.github:hover {
+    font-size: 30px;
   }
+  i.icon.instagram:hover {
+    font-size: 30px;
+  }
+  i.icon.linkedin:hover {
+    font-size: 30px;
+  }
+  i.icon.envelope:hover {
+    font-size: 30px;
+  }
+}

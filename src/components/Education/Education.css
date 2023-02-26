@@ -3,19 +3,39 @@
     place-content: center;
 }
 
+.grad{
+    display: grid;
+    place-content: center;
+}
+
 .dma{
     height: 80px;
-    width: 100px;
 }
 
 .srcasw{
     height: 80px;
 }
 
+/* for screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+    .dma, .srcasw {
+        height: 48px;
+        width: 174px
+    }
+  }
+  
+  /* for screens larger than 768px */
+  @media only screen and (min-width: 768px) {
+    .dma, .srcasw {
+        width: 300px;
+        height: 71px;
+    }
+  }
+
 .header6{
     font-family: 'Titillium We', serif;
     font-size: 25px;
-    white-space: nowrap;
+    
 }
 
 .course{
@@ -29,5 +49,7 @@
     font-family: 'Roboto Serif', serif;
     font-size: 20px;
     font-weight: 600;
+    white-space: nowrap;
     margin-top: -0.5rem;
 }
+
