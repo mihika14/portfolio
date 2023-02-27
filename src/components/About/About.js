@@ -20,14 +20,16 @@ const About = () => {
             <button className="ui resume"> Resume
             </button>
          </a>
+         <div className="ui icons">
          <a href="https://github.com/mihika14" target="_blank">
-            <i className="big black github icon"></i></a>
+            <i className="huge black github icon"></i></a>
          <a href="https://www.linkedin.com/in/mihikasaxena14/" target="_blank">
-            <i className="big linkedin icon"></i></a>
+            <i className="huge linkedin icon"></i></a>
          <a href="https://www.instagram.com/_mihika14_/" target="_blank">
-            <i className="big pink instagram icon"></i></a>
+            <i className="huge pink instagram icon"></i></a>
          <a href="mailto: mihikasaxena13@gmail.com" target="_blank">
-            <i className="big red envelope square icon"></i></a>
+            <i className="huge red envelope square icon"></i></a>
+         </div>
             </div>
       </div>
 

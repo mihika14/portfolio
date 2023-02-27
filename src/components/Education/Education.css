@@ -6,6 +6,7 @@
 .grad{
     display: grid;
     place-content: center;
+    margin-top: 3.5rem;
 }
 
 .dma{

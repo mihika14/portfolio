@@ -13,13 +13,13 @@ const HomePage = () => {
             behavior: "smooth"
         });
     };
-
+   
     return (
         <div>
-            <div className="ui arrow" onClick={scrollToTop}>
-                Scroll to top
-                <i className="huge arrow alternate circle up icon"></i>
-            </div>
+            <button className="ui arrow" onClick={scrollToTop}>
+            ↑
+            
+            </button>
             <Navbar />
             < About />
             <br/>

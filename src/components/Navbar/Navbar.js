@@ -20,7 +20,7 @@ export default class Navbar extends Component  {
           onClick={this.handleItemClick}
           href="/about"
         >
-        <Icon name='home' />
+        <Icon name='home' size='huge' />
         </Menu.Item>
         <Menu.Item
           name='SKILLS'
