@@ -6,7 +6,7 @@ const Achievements = () => {
     const options = [
     {
         Achievementtitle:"HOCKEY PLAYER",
-        Achievementbody:"I exemplify hard work, dedication, and teamwork as a national-level hockey player, with skill, passion, and pride.",
+        Achievementbody:"Achieved national recognition in hockey tournaments organized by CBSE.",
         Achievementdate:"2014-2019"
     },
     {

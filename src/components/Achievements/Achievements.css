@@ -37,10 +37,10 @@
   }
   
   .cardachievement .card__dateachievement {
-    color: #6e6b80;
-    font-size: 0.8rem;
+    color: #25242a;
+    font-size: 0.9rem;
     text-align: center;
-    text-decoration: underline;
+    font-weight: 700;
   }
   
   .cardachievement .card__arrowachievement {
