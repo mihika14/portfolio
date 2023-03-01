@@ -25,7 +25,8 @@ const ExpCard = () => {
     {
       title: "AUTHENICATION SERVER",
       organization: "Devtown",
-      body: "In a seven-day workshop, I was able to develop a secure and reliable authentication server using MongoDB and Node.js . During this project, I learned how to integrate MongoDB, with Node.js. This project provided me with hands-on experience in building a secure and scalable authentication system using MongoDB and Node.js."
+      body: "In a seven-day workshop, I was able to develop a secure and reliable authentication server using MongoDB and Node.js . During this project, I learned how to integrate MongoDB, with Node.js. This project provided me with hands-on experience in building a secure and scalable authentication system using MongoDB and Node.js.",
+      link:"https://drive.google.com/file/d/1P_XCKgmGgM0EDWYNPfWHhAQ10LLoKkTY/view?usp=sharing"
     }
   ]
 

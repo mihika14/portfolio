@@ -4,6 +4,7 @@ import Skills from "../Skills/Skills";
 import Education from "../Education/Education"
 import Navbar from "../Navbar/Navbar";
 import Experience from "../Experience/Experience";
+import Achievements from "../Achievements/Achievements";
 import "./Homepage.css";
 
 const HomePage = () => {
@@ -40,6 +41,7 @@ const HomePage = () => {
             <br/>
             <br/>
             <Experience />
+            <Achievements/>
         </div>
     )
 }

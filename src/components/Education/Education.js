@@ -16,7 +16,7 @@ const Education = () => {
                   </div>
                   <div className="ten wide row">
                      <h3 className="ui header6">SRCASW , Delhi University</h3>
-                     <h4 className="ui course">B.Sc. (Hons) Electronics</h4>
+                     <h4 className="ui course">B.Sc. (Hons) Electronics | 8.365 cgpa</h4>
                      <div className="ui year">2020-present | Delhi</div>
                   </div>
                </div>
@@ -31,7 +31,7 @@ const Education = () => {
                   </div>
                   <div className="ten wide row">
                      <h3 className="ui header6">Dayawati Modi Academy</h3>
-                     <h4 className="ui course">Intermediate</h4>
+                     <h4 className="ui course">Intermediate | 87.00%</h4>
                      <div className="ui year">2019-2020 | CBSE</div>
                   </div>
                </div>
@@ -46,7 +46,7 @@ const Education = () => {
                   </div>
                   <div className="ten wide row">
                      <h3 className="ui header6">Dayawati Modi Academy</h3>
-                     <h4 className="ui course">High School</h4>
+                     <h4 className="ui course">High School | 92.6%</h4>
                      <div className="ui year">2017-2018 | CBSE</div>
                   </div>
                </div>
