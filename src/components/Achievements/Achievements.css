@@ -24,6 +24,7 @@
     font-size: 1.14rem;
     font-family: 'Roboto Serif', serif;
     text-align: center;
+    
   }
   
   .cardachievement .card__titleachievement {
@@ -43,6 +44,13 @@
     font-weight: 700;
   }
   
+  .card_link{
+    margin: 1rem;
+    display: grid;
+    place-content: center;
+    white-space: nowrap;
+    font-size: small
+  }
   .cardachievement .card__arrowachievement {
     position: absolute;
     background: var(--primary-color);

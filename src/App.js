@@ -16,7 +16,7 @@ export default function App() {
       {isLoading ? (
         <div className="loader">
           <div className="waves"></div>
-          
+          oddvaomvowmoewmbmrmblwermlbm;r
         </div>
       ) : (
         <div><HomePage/></div>
