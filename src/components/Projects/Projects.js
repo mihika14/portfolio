@@ -33,7 +33,7 @@ const Projects = () => {
     ];
   
     return (
-      <div className="ui project">
+      <div id="ui project">
         <h1 className="ui header4">PROJECTS</h1>
         <div className="projectscard">
         {projectOptions.map((option, index) => (

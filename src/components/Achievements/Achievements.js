@@ -17,7 +17,7 @@ const Achievements = () => {
   ]
 
   return (
-    <div className="ui achievement">
+    <div id="ui achievement">
       <h1 className="header4">ACHIEVEMENTS</h1>
       <div className="ui achievementcard">
         {options.map((option) => (

@@ -17,7 +17,7 @@ const HomePage = () => {
     };
    
     return (
-        <div>
+        <div id="ui homepage">
             <button className="ui arrow" onClick={scrollToTop}>
             ↑
             

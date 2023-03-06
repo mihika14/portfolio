@@ -18,7 +18,7 @@ export default class Navbar extends Component  {
           name='ABOUT'
           active={activeItem === 'ABOUT'}
           onClick={this.handleItemClick}
-          href="/about"
+          href="#ui homepage"
         >
         <Icon name='home' size='huge' />
         </Menu.Item>
