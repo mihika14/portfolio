@@ -13,16 +13,16 @@ export default function App() {
 
   return (
     <>
-      {isLoading ? (
-        <div className="loader">
-          <div className="waves"></div>
-          oddvaomvowmoewmbmrmblwermlbm;r
-        </div>
+       {isLoading ? (
+        <div className="app">
+          <div className="loader">
+            <div className="waves"></div>
+          </div> 
+         </div>
       ) : (
-        <div><HomePage/></div>
-      )}
+        <div><HomePage /></div>
+      )} 
     </>
   );
 }
 
- 

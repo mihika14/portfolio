@@ -21,14 +21,30 @@
     align-items: center;
  }
   
- .card2 {
+ /* .card2 {
   width: 290px;
   height: 300px;
   background: #e3f1ff;
   border-radius:20px;
   -webkit-transition: all .2s;
   transition: all .2s;
- }
+ } */
+
+ .card2 {
+  width: 100%;
+  max-width: 290px;
+  height: 300px;
+  background: #e3f1ff;
+  border-radius: 20px;
+  transition: all .2s;
+}
+
+@media screen and (min-width: 768px) {
+  .card2 {
+    max-width: 600px;
+  }
+}
+
  
  .card2:hover {
   -webkit-transform: scale(0.98);
@@ -61,6 +77,27 @@
   text-decoration: underline;
  }
 
+ .cardTitle {
+  display: grid;
+  place-content: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Titillium Web', serif;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cardTitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardTitle {
+    font-size: 14px;
+  }
+}
+
  .organization{
   display: grid;
   place-content: center;
@@ -70,6 +107,28 @@
   font-family: 'Titillium Web', serif;
   text-decoration: underline;
  }
+
+ .organization {
+  display: grid;
+  place-content: center;
+  color: rgb(15, 15, 15);
+  font-size: 32px;
+  margin-top: -0.5rem;
+  font-family: 'Titillium Web', serif;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .organization {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .organization {
+    font-size: 24px;
+  }
+}
 
  .date{
   display: grid;
@@ -86,6 +145,27 @@
   font-family: 'Roboto Serif', serif;
   font-weight: 500;
  }
+
+ .cardBody {
+  text-align: center;
+  color: rgb(6, 6, 6);
+  font-size: 15px;
+  font-family: 'Roboto Serif', serif;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .cardBody {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardBody {
+    font-size: 13px;
+  }
+}
+
 
 .box{
   display: block;

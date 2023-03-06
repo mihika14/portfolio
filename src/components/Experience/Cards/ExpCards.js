@@ -27,6 +27,12 @@ const ExpCard = () => {
       organization: "Devtown",
       body: "In a seven-day workshop, I was able to develop a secure and reliable authentication server using MongoDB and Node.js . During this project, I learned how to integrate MongoDB, with Node.js. This project provided me with hands-on experience in building a secure and scalable authentication system using MongoDB and Node.js.",
       link:"https://drive.google.com/file/d/1P_XCKgmGgM0EDWYNPfWHhAQ10LLoKkTY/view?usp=sharing"
+    },
+    {
+      title:"ADVANCE PYTHON",
+      organization:"CETPA",
+      body:"During this workshop, I learned about the basics of Python programming, including classes, functions, and the popular data analysis library pandas. I also had the opportunity to build projects using Python's GUI library Tkinter, and also did a project i.e Zomato Food Analysis using libraries pandas and Numpy.",
+      link:"https://drive.google.com/file/d/1GyhEvz8CjE4hWXr58kfetYCIwk9j4a_R/view?usp=sharing"
     }
   ]
 
