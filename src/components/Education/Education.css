@@ -35,17 +35,42 @@
 
 .header6{
     font-family: 'Titillium We', serif;
-    font-size: 25px;
-    
+    font-size: 25px; 
 }
 
-.course{
+
+@media only screen and (max-width: 768px) {
+    .header6 {
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .header6 {
+      font-size: 18px;
+    }
+  }
+
+  .course{
     font-family: 'Roboto Serif', serif;
     font-size: 20px;
     white-space: nowrap;
     margin-top: -0.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .course {
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .course {
+    font-size: 16px;
+    margin-top: 0.5rem;
+  }
+}
 .year{
     font-family: 'Roboto Serif', serif;
     font-size: 20px;
@@ -53,4 +78,19 @@
     white-space: nowrap;
     margin-top: -0.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .year {
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .year {
+    font-size: 16px;
+    margin-top: 0.5rem;
+  }
+}
+
 

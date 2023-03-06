@@ -1,199 +1,109 @@
-.card {
-  width: 290px;
-  height: 300px;
-  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-  border-radius: 20px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+.expcard {
+  max-width: 350px;
+  border-radius: 0.5rem;
+  background-color: #a2a8cd;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
   margin: 2rem;
-  opacity: 0.7;
- }
-
- .cardDetails {
-  color: white;
-    height: 100%;
-    gap: 0.5em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    align-items: center;
- }
-  
- /* .card2 {
-  width: 290px;
-  height: 300px;
-  background: #e3f1ff;
-  border-radius:20px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
- } */
-
- .card2 {
-  width: 100%;
-  max-width: 290px;
-  height: 300px;
-  background: #e3f1ff;
-  border-radius: 20px;
-  transition: all .2s;
+ 
 }
 
-@media screen and (min-width: 768px) {
-  .card2 {
-    max-width: 600px;
-  }
-}
-
- 
- .card2:hover {
-  -webkit-transform: scale(0.98);
-      -ms-transform: scale(0.98);
-          transform: scale(0.98);
-  border-radius: 20px;
- }
- 
- .card:hover {
-  -webkit-box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
-          box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
- }
-
- .cardList{
+.expcards{
   display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-top: 40px;
- }
+}
 
- .cardTitle{
-  display: grid;
-  place-content: center;
-  color: rgb(0, 0, 0);
-  font-family: 'Titillium Web', serif;;
-  font-size: 18px;
-  text-decoration: underline;
- }
+.expcontent {
+  padding: 1.1rem;
+}
 
- .cardTitle {
-  display: grid;
-  place-content: center;
-  color: rgb(0, 0, 0);
+.expimage {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(239, 205, 255);
+}
+
+.exptitle {
+  color: #111827;
+  font-size: 25px;
+  white-space: nowrap;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
   font-family: 'Titillium Web', serif;
-  font-size: 18px;
-  text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .cardTitle {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .cardTitle {
-    font-size: 14px;
-  }
-}
-
- .organization{
-  display: grid;
-  place-content: center;
-  color: rgb(15, 15, 15);
-  font-size: 32px;
+.exporganization{
+  color: #111827;
+  font-size: 1.225rem;
   margin-top: -0.5rem;
+  font-weight: 600;
+  text-align: center;
   font-family: 'Titillium Web', serif;
-  text-decoration: underline;
- }
-
- .organization {
-  display: grid;
-  place-content: center;
-  color: rgb(15, 15, 15);
-  font-size: 32px;
-  margin-top: -0.5rem;
-  font-family: 'Titillium Web', serif;
-  text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .organization {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 480px) {
-  .organization {
-    font-size: 24px;
-  }
-}
-
- .date{
-  display: grid;
-  place-content: center;
+.expdesc {
+  margin-top: 0.5rem;
   color: black;
-  margin-top: -0.5rem;
-  font-size: 10px;
- }
-
- .cardBody{
-  text-align: center;
-  color: rgb(6, 6, 6);
-  font-size: 15px;
+  font-size: 0.975rem;
+  line-height: 1.25rem;
   font-family: 'Roboto Serif', serif;
-  font-weight: 500;
- }
-
- .cardBody {
-  text-align: center;
-  color: rgb(6, 6, 6);
-  font-size: 15px;
-  font-family: 'Roboto Serif', serif;
-  font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .cardBody {
-    font-size: 14px;
+.expaction {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .expcard {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+  
+  .expimage {
+    height: 200px;
+  }
+  
+  .exptitle {
+    font-size: 20px;
+  }
+  
+  .exporganization {
+    font-size: 1rem;
+  }
+  
+  .expdesc {
+    font-size: 0.875rem;
+  }
+  
+  .expaction {
+    font-size: 0.75rem;
+    padding: 2px 4px;
   }
 }
 
-@media (max-width: 480px) {
-  .cardBody {
-    font-size: 13px;
-  }
+.expaction span {
+  transition: .3s ease;
 }
 
-
-.box{
-  display: block;
-  margin:  auto;
-  padding: 6px 17px;
-  border-radius: 50px;
-  border: 0;
-  background-color: white;
-  opacity: 0.6;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all .5s ease;
+.expaction:hover span {
+  transform: translateX(4px);
 }
- 
-.box:hover {
-  letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
- }
- 
-.box:active {
-  letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
-  transform: translateY(10px);
-  transition: 100ms;
- }
+
+.arrow{
+  text-align: center;
+}
