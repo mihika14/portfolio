@@ -34,7 +34,7 @@ const Projects = () => {
         {projectOptions.map((option, index) => (
           <div className="card">
             <div className="card__img">
-              <img src={option.image} alt={option.title} />
+              <img src={option.image} alt={option.title} target='/blank'/>
             </div>
             <div className="card__descr-wrapper">
               <p className="card__title">{option.title}</p>

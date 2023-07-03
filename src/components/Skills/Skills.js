@@ -1,61 +1,54 @@
 import React from "react";
 import "./Skills.css";
+import imageskill from "./assests/imageskill.png";
+import { FaPython,FaReact } from "react-icons/fa";
+import { BiLogoJavascript, BiLogoMongodb, BiLogoPython ,BiLogoHtml5} from "react-icons/bi";
+import { DiNodejs , DiCss3} from "react-icons/di";
+import { TbBrandCpp } from "react-icons/tb";
+import { FcElectronics } from "react-icons/fc";
+import { BsGit } from "react-icons/bs";
+import { SiSemanticuireact} from 'react-icons/si'
 
 const Skills = () => {
+  const icons = [
+    { name: "HTML", component: BiLogoHtml5 },
+    { name: "CSS", component: DiCss3 },
+    { name: "React.js", component: FaReact },
+    { name: "JavaScript", component: BiLogoJavascript },
+    { name: "Node.js", component: DiNodejs },
+    { name: "MongoDB", component: BiLogoMongodb },
+    { name: "Python", component: BiLogoPython },
+    { name: "C++", component: TbBrandCpp },
+    { name: "Electronics", component: FcElectronics },
+    { name: "Git", component: BsGit },
+    { name: "Semantic-UI React" , component: SiSemanticuireact}
+  ];
 
-
-   const languages = [
-      {
-         name: "HTML",
-         percent: "90%",
-      },
-      {
-         name: "CSS",
-         percent: "75%",
-      },
-      {
-         name: "React.Js",
-         percent: "75%",
-      },
-      {
-         name: "C",
-         percent: "70%",
-      },
-      {
-         name: "C++",
-         percent: "80%",
-      },
-      {
-         name: "Python",
-         percent: "50%",
-      },
-      {
-         name: "JavaScript",
-         percent: "60%",
-      },
-
-
-   ]
-   return (
-      <div id="ui Skills">
-         <h1 className="ui header4">LANGUAGES AND TOOLS</h1>
-         <div className="SkillContainer">
-            <div className="SkillCard">
-               <div className="SkillBody">
-                  {languages.map((language) => (
-                     <div className="Skill">
-                        <div className="SkillName">{language.name}</div>
-                        <div className="SkillLevel">
-                           <div className="SkillPercent" style={{ width: language.percent }}></div>
-                        </div>
-                        <div className="SkillPercentnumber">{language.percent}</div>
-                     </div>
-                  ))}
-               </div>
+  return (
+    <div id="ui Skills">
+       <h1 className="ui header4">SKILLS AND TECHNOLOGIES</h1>
+      <div className="ui vertically divided grid">
+        <div className="two column row">
+          <div className="column">
+            <img className="imageskill" src= {imageskill} />
+          </div>
+          <div className="column">
+            <div className="iconsskills">
+              {icons.map((icon, index) => {
+                const IconComponent = icon.component;
+                return (
+                  <div key={index} className="icon-container">
+                    <IconComponent className="iconskill" />
+                    <span className="icon-text">{icon.name}</span>
+                  </div>
+                );
+              })}
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   )
+    </div>
+  );
 };
 
 export default Skills;

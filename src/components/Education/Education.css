@@ -1,96 +1,112 @@
 .Education{
-    display: grid;
+    display: flex;
+    flex-direction: row;
     place-content: center;
 }
 
-.grad{
-    display: grid;
-    place-content: center;
-    margin-top: 3.5rem;
+/*Magic card*/
+.edu_card {
+  width: 190px;
+  height: 254px;
+  background: #f5f5f5;
+  overflow: visible;
+  box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ 
+ .edu_card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 0 1rem;
+ }
+ 
+ .edu_card-img {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: #42caff;
+  background: linear-gradient(to bottom, #42caff 0%, #e81aff 100%);
+  position: relative;
+  transition: all .3s ease-in-out;
+ }
+ 
+ .edu_card-img::before {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border: 1rem solid #e8e8e8;
+ }
+ 
+ /*Text*/
+ .edu_text-title {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: #42caff;
+  letter-spacing: 0.05rem;
+ }
+ 
+ .edu_text-body {
+  font-size: .8em;
+  text-align: center;
+  color: #6f6d78;
+  font-weight: 400;
+  font-style: italic;
+ }
+ 
+ /*Hover*/
+ .edu_card:hover .card-img {
+  --size: 110px;
+  width: var(--size);
+  height: var(--size);
+ }
+
+/* Add this CSS to the Education.css file */
+
+.edu_card {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
 }
 
-.dma{
-    height: 80px;
+.edu_card-img {
+  width: 100px; /* Adjust the width as per your requirement */
+  height: 100px; /* Adjust the height as per your requirement */
+  margin-right: 20px; /* Add margin as per your design preference */
 }
 
-.srcasw{
-    height: 80px;
+.edu_card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-/* for screens smaller than 768px */
-@media only screen and (max-width: 767px) {
-    .dma, .srcasw {
-        height: 48px;
-        width: 174px
-    }
-  }
-  
-  /* for screens larger than 768px */
-  @media only screen and (min-width: 768px) {
-    .dma, .srcasw {
-        width: 300px;
-        height: 71px;
-    }
-  }
-
-.header6{
-    font-family: 'Titillium We', serif;
-    font-size: 25px; 
+.edu_card-info {
+  flex-grow: 1;
 }
 
-
-@media only screen and (max-width: 768px) {
-    .header6 {
-      font-size: 20px;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .header6 {
-      font-size: 18px;
-    }
-  }
-
-  .course{
-    font-family: 'Roboto Serif', serif;
-    font-size: 20px;
-    white-space: nowrap;
-    margin-top: -0.5rem;
+.edu_text-body {
+  font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
-  .course {
-    font-size: 18px;
-    margin-top: 0;
-  }
+.edu_text-percentage {
+  font-weight: bold;
 }
 
-@media only screen and (max-width: 480px) {
-  .course {
-    font-size: 16px;
-    margin-top: 0.5rem;
-  }
+.educationcard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:  center;
+  margin-top: 80px;
 }
-.year{
-    font-family: 'Roboto Serif', serif;
-    font-size: 20px;
-    font-weight: 600;
-    white-space: nowrap;
-    margin-top: -0.5rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .year {
-    font-size: 18px;
-    margin-top: 0;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .year {
-    font-size: 16px;
-    margin-top: 0.5rem;
-  }
-}
-
-

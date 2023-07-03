@@ -1,64 +1,51 @@
 import React from "react";
-import dma from './assests/dma (2).png';
-import srcasw from './assests/srcasw (2).png';
-import './Education.css';
+import dma from "./assests/dma (2).png";
+import srcasw from "./assests/srcasw (2).png";
+import "./Education.css";
 
 const Education = () => {
-   return (
-      <div id="ui Education">
-         <h1 className="ui header4">EDUCATION</h1>
-      <div className="ui grad">
-         <div className="ui graduation">
-            <div className="ui internally celled grid">
-               <div className="row">
-                  <div className="three wide column">
-                     <img className="ui srcasw" src={srcasw} />
-                  </div>
-                  <div className="ten wide row">
-                     <h3 className="ui header6">SRCASW , Delhi University</h3>
-                     <h4 className="ui course">B.Sc. (Hons) Electronics | 8.365 cgpa</h4>
-                     <div className="ui year">2020-present | Delhi</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <br/>
-         <div className="ui intermediate">
-            <div className="ui internally celled grid">
-               <div className="row">
-                  <div className="three wide column">
-                     <img className="ui dma" src={dma} />
-                  </div>
-                  <div className="ten wide row">
-                     <h3 className="ui header6">Dayawati Modi Academy</h3>
-                     <h4 className="ui course">Intermediate | 87.00%</h4>
-                     <div className="ui year">2019-2020 | CBSE</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <br/>
-         <div className="ui highschool">
-            <div className="ui internally celled grid">
-               <div className="row">
-                  <div className="three wide column">
-                     <img className="ui dma" src={dma} />
-                  </div>
-                  <div className="ten wide row">
-                     <h3 className="ui header6">Dayawati Modi Academy</h3>
-                     <h4 className="ui course">High School | 92.6%</h4>
-                     <div className="ui year">2017-2018 | CBSE</div>
-                  </div>
-               </div>
-            </div>
-         </div>
+  const educationDetails = [
+    {
+      image: srcasw,
+      title: "SRCASW, Delhi University",
+      subtitle: "Bsc(H) Electronics",
+      percentage: "8.47 CGPA",
+    },
+    {
+      image: dma,
+      title: "DMA, Rampur",
+      subtitle: "Intermediate",
+      percentage: "87%",
+    },
+    {
+      image: dma,
+      title: "DMA, Rampur",
+      subtitle: "High School",
+      percentage: "92.6%",
+    },
+  ];
+
+  return (
+    <div id="ui Education">
+      <h1 className="ui header4">EDUCATION</h1>
+      <div className="educationcard">
+      {educationDetails.map((education, index) => (
+         
+        <div className="edu_card" key={index}>
+          <div className="edu_card-img">
+            <img className="educationimage" src={education.image} alt="Education" />
+          </div>
+          <div className="edu_card-info">
+            <p className="edu_text-body">{education.title}</p>
+            <p className="edu_text-subtitle">{education.subtitle}</p>
+            <p className="edu_text-percentage">{education.percentage}</p>
+          </div>
+        </div>
+      
+      ))}
       </div>
-      </div>
-   )
+    </div>
+  );
 };
+
 export default Education;
-
-
-
-
-
