@@ -27,12 +27,11 @@ const Skills = () => {
   return (
     <div id="ui Skills">
        <h1 className="ui header4">SKILLS AND TECHNOLOGIES</h1>
-      <div className="ui vertically divided grid">
-        <div className="two column row">
-          <div className="column">
+       <div className="ui skills">
+       <div className="ui left aligned container">
             <img className="imageskill" src= {imageskill} />
-          </div>
-          <div className="column">
+            </div>
+          <div className="ui right aligned container">
             <div className="iconsskills">
               {icons.map((icon, index) => {
                 const IconComponent = icon.component;
@@ -45,8 +44,7 @@ const Skills = () => {
               })}
             </div>
           </div>
-        </div>
-      </div>
+          </div>
     </div>
   );
 };

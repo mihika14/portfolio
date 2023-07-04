@@ -1,112 +1,107 @@
-.Education{
-    display: flex;
-    flex-direction: row;
-    place-content: center;
+.ui.Education{
+  margin-top: 90px;
 }
 
-/*Magic card*/
-.edu_card {
-  width: 190px;
-  height: 254px;
-  background: #f5f5f5;
-  overflow: visible;
-  box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
- 
- .edu_card-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2em;
-  padding: 0 1rem;
- }
- 
- .edu_card-img {
-  --size: 100px;
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  transform: translateY(-50%);
-  background: #42caff;
-  background: linear-gradient(to bottom, #42caff 0%, #e81aff 100%);
-  position: relative;
-  transition: all .3s ease-in-out;
- }
- 
- .edu_card-img::before {
-  content: "";
-  border-radius: inherit;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  height: 90%;
-  transform: translate(-50%, -50%);
-  border: 1rem solid #e8e8e8;
- }
- 
- /*Text*/
- .edu_text-title {
-  text-transform: uppercase;
-  font-size: 0.75em;
-  color: #42caff;
-  letter-spacing: 0.05rem;
- }
- 
- .edu_text-body {
-  font-size: .8em;
-  text-align: center;
-  color: #6f6d78;
-  font-weight: 400;
-  font-style: italic;
- }
- 
- /*Hover*/
- .edu_card:hover .card-img {
-  --size: 110px;
-  width: var(--size);
-  height: var(--size);
- }
-
-/* Add this CSS to the Education.css file */
-
-.edu_card {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
-}
-
-.edu_card-img {
-  width: 100px; /* Adjust the width as per your requirement */
-  height: 100px; /* Adjust the height as per your requirement */
-  margin-right: 20px; /* Add margin as per your design preference */
-}
-
-.edu_card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.edu_card-info {
-  flex-grow: 1;
-}
-
-.edu_text-body {
-  font-weight: bold;
-}
-
-.edu_text-percentage {
-  font-weight: bold;
-}
-
-.educationcard{
+.educationcard {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items:  center;
-  margin-top: 80px;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.edu_card {
+  width: 290px;
+  height: 120px;
+  margin: 0 10px; /* Adjust margin as needed */
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, #808080, #000000);
+  border-radius: 20px;
+  transition: all ease 0.2s;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.edu_card:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+.educationtitle {
+  font-family: 'Prompt', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_load {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  float: left;
+  background: linear-gradient(
+    120deg,
+    #e5e5e5 30%,
+    #f0f0f0 38%,
+    #f0f0f0 40%,
+    #e5e5e5 48%
+  );
+  border-radius: 50%;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 2s infinite;
+}
+
+.card_load_extreme_title {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: -10px;
+  color: white;
+  text-decoration: underline;
+}
+
+.card_load_extreme_descripion {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.card_load_extreme_descripion2 {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+  font-size: 15px;
+  color:white
+}
+
+@media (max-width: 768px) {
+  .educationcard {
+    flex-wrap: wrap;
+  }
+
+  .edu_card {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_load_extreme_title {
+    font-size: 18px;
+  }
+
+  .card_load_extreme_descripion {
+    font-size: 16px;
+  }
+
+  .card_load_extreme_descripion2 {
+    font-size: 14px;
+  }
 }

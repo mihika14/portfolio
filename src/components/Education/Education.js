@@ -7,42 +7,44 @@ const Education = () => {
   const educationDetails = [
     {
       image: srcasw,
-      title: "SRCASW, Delhi University",
-      subtitle: "Bsc(H) Electronics",
-      percentage: "8.47 CGPA",
+      title: "SRCASW",
+      subtitle: "Delhi University",
+      description: "Bsc(H) Electronics , 8.47 CGPA",
     },
     {
       image: dma,
-      title: "DMA, Rampur",
-      subtitle: "Intermediate",
-      percentage: "87%",
+      title: "D.M.A",
+      subtitle: "CBSE",
+      description: "Intermediate , 87.00%",
     },
     {
       image: dma,
-      title: "DMA, Rampur",
-      subtitle: "High School",
-      percentage: "92.6%",
+      title: "D.M.A",
+      subtitle: "CBSE",
+      description: "High School ,92.6%",
     },
   ];
 
   return (
     <div id="ui Education">
-      <h1 className="ui header4">EDUCATION</h1>
-      <div className="educationcard">
-      {educationDetails.map((education, index) => (
-         
-        <div className="edu_card" key={index}>
-          <div className="edu_card-img">
-            <img className="educationimage" src={education.image} alt="Education" />
-          </div>
-          <div className="edu_card-info">
-            <p className="edu_text-body">{education.title}</p>
-            <p className="edu_text-subtitle">{education.subtitle}</p>
-            <p className="edu_text-percentage">{education.percentage}</p>
-          </div>
+      <div className="ui Education">
+        <h1 className="ui header4">EDUCATION</h1>
+        <div className="educationcard">
+          {educationDetails.map((education, index) => (
+            <div className="edu_card">
+              <img src={education.image} class="card_load" />
+              <div className="educationtext">
+                <div className="card_load_extreme_title">{education.title}</div>
+                <div className="card_load_extreme_descripion">
+                  {education.subtitle}
+                </div>
+                <div className="card_load_extreme_descripion2">
+                  {education.description}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-      
-      ))}
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import "./Achievements.css";
 
 const Achievements = () => {
-
+  
   const options = [
     {
       Achievementtitle: "HOCKEY PLAYER",

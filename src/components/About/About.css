@@ -5,67 +5,56 @@
 }
 
 .image1 {
-  height: 400px;
-  width: 1000px;
+  animation: backInRight 3s;
 }
-
-/* styles for screens larger than 768px */
-@media only screen and (min-width: 768px) {
-  .image1 {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* styles for screens between 480px and 767px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .image1 {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* styles for screens smaller than 480px */
-@media only screen and (max-width: 479px) {
-  .image1 {
-    width: 100%;
-    height: auto;
-  }
-}
-
 
 .ui.me{
   margin-left: 70px;
+  animation: backInLeft 2s;
 } 
 
 .header1 {
-    font-size: 20px;
-    font-family: 'Roboto Serif', serif;
-    font-style: italic;
-    
+    font-size: 35px;
+    font-family: 'Prompt', sans-serif;
+    /* font-style: italic; */
+    font-weight: 500;
+    -webkit-background-clip: text;
+    text-shadow:0px 0px 5px white; 
 }
 
 .name {
-    font-size: 40px;
-    font-family: 'Titillium Web', serif;
+    font-size: 45px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
     margin-top: -0.5rem;
-    font-weight: 50;
     margin-bottom: -0.5rem;
+    -webkit-background-clip: text;
+    text-shadow:0px 0px 5px white;
    
 }
 
 .aboutme {
-  font-family: 'Roboto Serif', serif;
-    font-style: italic;
+  font-family: 'Prompt', sans-serif;
+    /* font-style: italic; */
     margin-top: 1.5rem;
     font-size: 15px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
+
 .aboutme3 {
+  font-family: 'Prompt', sans-serif;
   width: 100%;
+  font-size: 19px;
   max-width: 700px;
+  font-weight: 400;
+}
+
+.ui.about {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  margin-top: 80px;
 }
 
 @media screen and (max-width: 767px) {
@@ -76,38 +65,16 @@
   }
 }
 
-
-/* styles for screens larger than 768px */
-@media only screen and (min-width: 768px) {
-  .aboutme {
-    font-family: 'Roboto Serif', serif;
-    font-style: italic;
-    margin-top: 1.5rem;
-    font-size: 15px;
-  }
-}
-
-/* styles for screens between 480px and 767px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .aboutme {
-    font-size: 13px;
-    margin-top: 1rem;
-  }
-}
-
-/* styles for screens smaller than 480px */
-@media only screen and (max-width: 479px) {
-  .aboutme {
-    font-size: 12px;
-    margin-top: 0.5rem;
-  }
-}
-
 .aboutme2 {
-    font-family: 'Roboto Serif', serif;
-    font-style: italic;
+  font-family: 'Prompt', sans-serif;
+    /* font-style: italic; */
+    font-weight: 500;
     margin-top: -0.5rem;
-    font-size: 25px;
+    font-size: 33px;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    text-shadow:0px 0px 5px white;
+   
 }
 
 .contact{
@@ -187,6 +154,11 @@
   i.icon.envelope:hover {
     font-size: 50px;
   }
+
+  .image1 {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -230,3 +202,136 @@
   width: 500px;
 }
 
+
+#about {
+  display: flex;
+  justify-content: right;
+  font-family: 'Gentium Book Plus', serif;
+}
+
+@media only screen and (max-width: 767px){
+.ui.me {
+  margin-left: 0;
+  animation: none; 
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 30px
+}
+
+.aboutme {
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
+.column.aboutme1 {
+  width: 100%;
+}
+
+.ui.about {
+  flex-direction: column;
+}
+
+.resume {
+  margin-right: 10px; 
+}
+
+
+.ui.about .column.aboutme1 {
+  order: 2; 
+}
+
+.ui.about .image1 {
+  order: 1; 
+}
+
+.ui.aboutme2{
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.ui.aboutme3{
+  margin-left: -10px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  .image1 {
+    width: 100%;
+    height: auto;
+  }
+  .aboutme {
+      font-family: 'Roboto Serif', serif;
+      margin-top: 1.5rem;
+      font-size: 15px;
+    }
+  }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .image1 {
+    width: 100%;
+    height: auto;
+  }
+    .aboutme {
+      font-size: 13px;
+      margin-top: 1rem;
+    }
+  
+    .aboutme2 {
+      font-size: 25px;
+    }
+  }
+
+
+@media only screen and (max-width: 479px) {
+  .image1 {
+    width: 100%;
+    height: auto;
+  }
+    .aboutme {
+      font-size: 12px;
+      margin-top: 0.5rem;
+    }
+}
+
+.wave {
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes backInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes backInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
