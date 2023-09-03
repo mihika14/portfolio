@@ -1,107 +1,192 @@
-.ui.Education{
-  margin-top: 90px;
+/* Import */
+
+@import url("https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800");
+
+/* Variables */
+
+:root {
+  --background: #252827;
+  --color-primary: #30d5c8;
+  --color-light: white;
+  --color-dim: #6c6d6d;
+  --spacing: 50px;
+  --radius: 4px;
+  --date: 120px;
+  --dotborder: 4px;
+  --dot: 11px;
+  --line: 4px;
 }
 
-.educationcard {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 10px;
+/* Base */
+
+body {
+  background: var(--background);
+  font-size: 16px;
 }
 
-.edu_card {
-  width: 290px;
-  height: 120px;
-  margin: 0 10px; /* Adjust margin as needed */
-  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
-  padding: 12px 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background: linear-gradient(90deg, #808080, #000000);
-  border-radius: 20px;
-  transition: all ease 0.2s;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+.education-details {
+  font-weight: 300;
 }
 
-.edu_card:hover {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  transform: translateY(-5px);
+strong {
+  font-weight: 600;
 }
 
-.educationtitle {
-  font-family: 'Prompt', sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-.card_load {
-  width: 70px;
-  height: 70px;
-  position: relative;
-  float: left;
-  background: linear-gradient(
-    120deg,
-    #e5e5e5 30%,
-    #f0f0f0 38%,
-    #f0f0f0 40%,
-    #e5e5e5 48%
-  );
-  border-radius: 50%;
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  animation: load89234 2s infinite;
-}
-
-.card_load_extreme_title {
-  font-family: 'Prompt', sans-serif;
+.education-header {
+  font-family: "Saira", sans-serif;
+  letter-spacing: 1.5px;
+  color: var(--color-light);
   font-weight: 700;
-  font-size: 20px;
-  margin-top: -10px;
-  color: white;
-  text-decoration: underline;
+  font-size: 2.4em;
+  text-transform: uppercase;
 }
 
-.card_load_extreme_descripion {
-  font-family: 'Prompt', sans-serif;
-  font-weight: 500;
-  margin-top: 5px;
-  font-size: 20px;
-  color: white;
+#education-extracurii {
+  margin-top: var(--spacing);
+  text-align: center;
 }
 
-.card_load_extreme_descripion2 {
-  font-family: 'Prompt', sans-serif;
-  font-weight: 500;
-  margin-top: 5px;
-  font-size: 15px;
-  color:white
+.timeline {
+  border-left: var(--line) solid var(--color-primary);
+  border-bottom-right-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Chivo", sans-serif;
+  margin: var(--spacing) auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: var(--spacing);
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 73%;
+}
+
+.education-title {
+  font-family: "Saira", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 1.4em;
+  
+}
+
+.event {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: calc(var(--spacing) * 0.5);
+  margin-bottom: var(--spacing);
+  position: relative;
+
+  &:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+
+  &:before {
+    left: calc(
+      (
+          (var(--date) * 1.6) + var(--spacing) + var(--line) + var(--dot) +
+            (var(--dotborder) * -12)
+        ) * -1
+    );
+    color: rgba(255, 255, 255, 0.4);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: var(--date);
+    font-family: "Saira", sans-serif;
+  }
+
+  &:after {
+    box-shadow: 0 0 0 var(--dotborder) #30d5c8;
+    left: -58px;
+    background: rgba(38, 41, 45, 0.05);
+    border-radius: 50%;
+    height: var(--dot);
+    width: var(--dot);
+    content: "";
+    top: 5px;
+  }
+}
+
+.education-extracurii {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* This will separate Education and Extracurricular sections */
+  margin: 0 auto; /* To center the content horizontally */
+  max-width: 1200px; /* Adjust the max width as needed */
+}
+
+.extracurricular {
+  margin-left: 150px;
+  flex: 2; /* Take up twice the width of Education */
+}
+
+.extracurricular-item h2 {
+  font-family: "Saira", sans-serif;
+  letter-spacing: 1.5px;
+  color: aliceblue;
+  margin-left: 19px;
+}
+
+.extracurricular-item {
+  letter-spacing: 0.6px;
+  color: aliceblue;
+  font-family: "Chivo", sans-serif;
+}
+
+.extracurricular-container {
+  margin-top: 52px;
+}
+
+.extracurricular-item hr {
+  border: none;
+  height: 4px;
+  background-color: var(--color-primary);
+  margin-top: -6px;
+  margin-bottom: 10px;
+  width: calc(100% - 37px);
 }
 
 @media (max-width: 768px) {
-  .educationcard {
-    flex-wrap: wrap;
+  .education-extracurii{
+    display: flex;
+    flex-direction: column;
   }
 
-  .edu_card {
-    width: 100%;
-    margin: 10px;
-  }
+  .education-header{
+    text-align: center;
 }
 
-@media (max-width: 480px) {
-  .card_load_extreme_title {
-    font-size: 18px;
-  }
+.timeline{
+    max-width: 80%; 
+    margin: var(--spacing) ;
+    padding: var(--spacing); 
+    font-size: 0.9em; 
+    /* border-left: none;  */
+}
 
-  .card_load_extreme_descripion {
-    font-size: 16px;
-  }
+&:before {
+  left: calc(
+    (
+        (var(--date) * 1.6) + var(--spacing) + var(--line) + var(--dot) +
+          (var(--dotborder) * -12)
+      ) * -1
+  );
+}
+.extracurricular{
+  margin-left: 0;
+}
 
-  .card_load_extreme_descripion2 {
-    font-size: 14px;
-  }
 }

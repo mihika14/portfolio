@@ -1,47 +1,194 @@
-body {
-    /* background-image: linear-gradient(to right, rgba(11, 11, 11, 0), rgb(0, 217, 255));; */
-   background-color: #B2AFE5;
-    background-attachment: fixed; 
+.homepagecontainer {
+  font-family: "Saira";
+  display: flex;
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-direction: column;
 }
 
-@keyframes bounce_513 {
-    0%,
-      100% {
-      transform: translateY(-25%);
-      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-    }
-  
-    50% {
-      transform: translateY(0);
-      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    }
+.homepage {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.headerhomepagecontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.headerhomepage1 {
+  color: rgb(231, 230, 230);
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  gap: 10px;
+  letter-spacing: 3.5px;
+  margin-left: 10px;
+  font-family: "Saira";
+}
+
+.name1 {
+  color: #eee;
+  font-weight: 700;
+  font-family: "Saira";
+}
+
+.name2 {
+  color: black;
+  font-weight: 700;
+  font-size: 35px;
+  font-family: "Chivo', sans-serif";
+}
+
+.intro {
+  color: aliceblue;
+  font-family: "Saira";
+  font-weight: 700;
+  margin-top: 6px;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  font-size: 4vw;
+  letter-spacing: 2.2px;
+  text-shadow: 1px 3px 11px rgba(0, 0, 0, 0.3);
+}
+
+.intro-name {
+  color: #30d5c8;
+  text-transform: uppercase;
+}
+
+.hometextcontainer {
+  font-size: 38px;
+  -webkit-background-clip: text;
+  color: aliceblue;
+  letter-spacing: 4px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  /* text-align: center; */
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 14px;
+  /* margin-right: auto; */
+}
+
+.contact-container {
+  position: fixed;
+  /* top: 0; */
+  right: 10px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Saira";
+}
+
+.contact-card {
+  /* text-align: center; */
+}
+
+.value {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.value:hover {
+  color: #ff5733;
+}
+
+@-webkit-keyframes bounce_613 {
+  40% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
   }
 
-
-/* .arrow.up:hover {
-    cursor: pointer;
-    color: black;
+  60% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
   }
 
-.arrow.up:active{
-    color:rgb(100, 104, 176)
-} */
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
-.ui.arrow{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    font-size: 20px;
-    background-color: white;
-    color: black;
-    width: 45px;
-    height: 45px;
-    opacity: 0.75;
-    border: 1px solid #e7eae8;
-    border-radius: 8px;
-    cursor: pointer;
-    animation: bounce_513 1s infinite;
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce_613 {
+  40% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+
+  60% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.value {
+  font-size: 23px;
+  padding: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .homepagecontainer {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .headerhomepage1 {
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing: 1.3px;
+  }
+
+  .intro {
+    font-size: 28px;
+    letter-spacing: 0.3px;
+    margin-left: 12px;
+  }
+
+  .hometextcontainer {
+    font-size: 31px; 
+    letter-spacing: 0.3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepagecontainer {
+    font-size: 12px; 
+  }
+
+  .hometextcontainer {
+    font-size: 23px;
+    margin-top: 21px;
+    margin-left: 13px;
+}
 }
