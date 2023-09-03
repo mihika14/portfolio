@@ -65,7 +65,7 @@ const Experience = () => {
           </ul>
         </div>
 
-        <h1 className="project-header">Certification</h1>
+        <h1 className="project-header">Certifications</h1>
          <div className="cert-cards">
           {certifications.map((detail, index) => (
             <div className="cert-card" key={index}>
