@@ -1,7 +1,6 @@
 .homepagecontainer {
   font-family: "Saira";
   display: flex;
-
   justify-content: space-between;
   margin-top: 50px;
   flex-direction: column;
@@ -11,6 +10,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+ 
 }
 
 .headerhomepagecontainer {
@@ -70,21 +70,16 @@
   letter-spacing: 4px;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
   margin-top: 10px;
-  /* text-align: center; */
   text-transform: uppercase;
   font-weight: 700;
   margin-left: 14px;
-  /* margin-right: auto; */
 }
 
 .contact-container {
   position: fixed;
-  /* top: 0; */
   right: 10px;
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
@@ -92,7 +87,7 @@
 }
 
 .contact-card {
-  /* text-align: center; */
+  text-align: center;
 }
 
 .value {
@@ -106,61 +101,60 @@
   color: #ff5733;
 }
 
-@-webkit-keyframes bounce_613 {
-  40% {
-    -webkit-transform: scale(1.4);
-    transform: scale(1.4);
-  }
-
-  60% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-
-  80% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+.resume-btn {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #30d5c8;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
-@keyframes bounce_613 {
-  40% {
-    -webkit-transform: scale(1.4);
-    transform: scale(1.4);
-  }
-
-  60% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-
-  80% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+.resume-btn::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color:#252827;
+  transition: 0.5s;
+  transform-origin: center;
 }
 
-.value {
-  font-size: 23px;
-  padding: 10px;
+.resume-btn::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #252827;
+  transition: 0.5s;
 }
 
+.resume-btn:hover::before, .resume-btn:hover::after {
+  transform: scale(0)
+}
 
+.resume-btn:hover {
+  box-shadow: inset 0px 0px 25px #30d5c8;
+}
 
 @media (max-width: 768px) {
   .homepagecontainer {
     font-size: 14px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   .headerhomepage1 {
@@ -176,19 +170,64 @@
   }
 
   .hometextcontainer {
-    font-size: 31px; 
+    font-size: 31px;
     letter-spacing: 0.3px;
   }
+
+  .contact-container {
+    position: relative;
+    right: auto;
+    margin-top: 20px;
+  }
+
+  .contact-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+ 
 }
 
 @media (max-width: 480px) {
   .homepagecontainer {
-    font-size: 12px; 
+    font-size: 12px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   .hometextcontainer {
     font-size: 23px;
     margin-top: 21px;
+    
     margin-left: 13px;
-}
+  }
+
+  .contact-container {
+    position: relative;
+    right: auto;
+    margin-top: 20px;
+    width: 50%;
+    height: 39px;
+    margin-left: 20px;
+    background-color: #252827;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .contact-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .value{
+    font-size: 31px;
+    margin-right: 20px;
+  }
 }

@@ -3,7 +3,7 @@ import HomePage from "./components/HomePage/Homepage";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
-import { Home } from "@mui/icons-material";
+import Fade from 'react-reveal/Fade'; 
 
 export default function App() {
 
@@ -35,7 +35,9 @@ export default function App() {
               ↑            
               </button>
               <Navbar/>
+              <Fade left>
               <HomePage/>
+              </Fade>
               <About/>
           </div>
       )

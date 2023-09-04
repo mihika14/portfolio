@@ -13,7 +13,7 @@
 }
 
 .about{
-  margin-top: 190px;
+  margin-top: 120px;
 }
 
 .aboutcontainer {
@@ -23,6 +23,8 @@
   justify-content: space-around;
   align-content: flex-start;
   flex-wrap: wrap;
+  animation-name: backInLeft; 
+  animation-duration: 2s; 
 }
 
 .aboutme-text {

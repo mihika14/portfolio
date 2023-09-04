@@ -4,9 +4,8 @@ import "./Navbar.css";
 const Navbar = () => {
   const navigationItems = [
     { name: "About", link: "#about" },
-    { name: "Home", link: "#skills" },
-    { name: "Projects", link: "#about" },
-    { name: "Experience", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "Experience & certifications", link: "#experience" },
   ];
 
   return (
