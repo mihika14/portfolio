@@ -1,18 +1,20 @@
-.about{
+
+
+.about {
   margin-top: 90px;
 }
 
 .headerabout {
   text-align: center;
-    font-size: 72px;
-    font-family: 'Saira', sans-serif;
-    color: var(--color-light);
-    font-weight: 700;
-    letter-spacing: 8.3px;
-    line-height: 1.4em;
+  font-size: 72px;
+  font-family: "Saira", sans-serif;
+  color: var(--color-light);
+  font-weight: 700;
+  letter-spacing: 8.3px;
+  line-height: 1.4em;
 }
 
-.about{
+.about {
   margin-top: 120px;
 }
 
@@ -23,12 +25,9 @@
   justify-content: space-around;
   align-content: flex-start;
   flex-wrap: wrap;
-  animation-name: backInLeft; 
-  animation-duration: 2s; 
 }
 
 .aboutme-text {
-  
   height: 100px;
   width: 400px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -44,7 +43,7 @@
   justify-content: center;
 }
 
-.projects{
+.projects {
   margin-top: 120px;
   display: flex;
   align-items: center;
@@ -52,21 +51,21 @@
 }
 
 @media (max-width: 768px) {
- .about{
-  margin-top: 100px;
- }
+  .about {
+    margin-top: 100px;
+  }
 
- .headerabout{
-  font-size: 47px;
- }
+  .headerabout {
+    font-size: 47px;
+  }
 
- .skills{
-  margin-top: 80px;
- }
+  .skills {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 480px) {
   .homepagecontainer {
-    font-size: 12px; 
+    font-size: 12px;
   }
 }
